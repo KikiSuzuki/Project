@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/main/main",
+    "pages/myPage/myPage",
+    "pages/friends/friends",
+    "pages/registration/registration",
+    "pages/x/x",
+    "pages/find/find",
+    "pages/pwd/pwd"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "Please, help me",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#7BA7AB"
+  },
+  "tabBar": {
+    "backgroundColor": "#7BA7AB",
+    "color": "#fff",
+    "selectedColor": "#324b4e",
+    "list": [
+      {
+        "pagePath": "pages/find/find",
+        "text": "find",
+        "iconPath":"/resources/find.png",
+        "selectedIconPath": "/resources/find1.png"
+      },
+      {
+        "pagePath": "pages/x/x",
+        "text": "map",
+        "iconPath": "/resources/map.png",
+        "selectedIconPath": "/resources/map1.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "home",
+        "iconPath": "/resources/home.png",
+        "selectedIconPath": "/resources/home1.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "friends",
+        "iconPath": "/resources/friends.png",
+        "selectedIconPath": "/resources/friends1.png"
+      },
+      {
+        "pagePath": "pages/myPage/myPage",
+        "text": "my",
+        "iconPath": "/resources/me.png",
+        "selectedIconPath": "/resources/me1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,51 @@
+<!--pages/myPage/myPage.wxml-->
+<view class="avatar_container">
+  <image class="avatar" src="{{myUserInfo.user_photopath}}"/>
+</view>
+
+<view class="container">
+  <view class="section">My Info</view>
+</view>
+
+<view class="container">
+  <view>
+    <text class="text" >Name:</text>
+    <input class="input" type="text" bindinput="userNameInput"  value="{{myUserInfo.user_name}}"></input>
+  </view>
+  <view>
+    <text class="text" >Gender:</text>
+    <view id="rb">
+  <radio-group bindchange="genderChange">
+    <label wx:for="{{items}}">
+      <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+    </label>
+  </radio-group> 
+</view>
+  </view>
+  <view>
+    <text class="text" >About:</text>
+    <input class="input" type="text" bindinput="userAboutInput"  maxlength="26" value="{{myUserInfo.user_about}}"></input>
+  </view>
+  
+  <view class="button_cont">
+    <button bindtap="save" style="color:#324b4e">Save</button>
+  </view>
+</view>
+
+<view class="container">
+  <view class="section">My Statistic</view>
+</view>
+<view class="container">
+    <view>
+      <text class="text_stat">Request count: {{stat.req_stat}}</text>
+    </view>
+    <view>
+      <text class="text_stat">Response count: {{stat.res_stat}}</text>
+    </view>
+</view>
+
+<view class="container">
+  <view class="button_cont">
+    <button bindtap="deleteUser" style="color:#324b4e">Delete Account</button>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/main/main.wxml-->
+<!--<text>pages/main/main.wxml</text>-->
+<button id="sos_btn" bindtap="sos"><text id="help">Click if you need help</text></button>
+
+<view class="container">
+<text>Important level:</text>
+<ul id="indicators">
+  <li id="indicator_red"    class="{{red}}" bindtap="changeToRed"></li>
+  <li id="indicator_yellow" class="{{yellow}}" bindtap="changeToYellow"></li>
+  <li id="indicator_green"  class="{{green}}" bindtap="changeToGreen"></li>
+</ul>
+<view id="rb">
+  <radio-group bindchange="privateChange">
+    <label wx:for="{{items}}">
+      <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+    </label>
+  </radio-group> 
+</view>
+<view >
+  <input id="txt" placeholder-class="phcolor" type="text" bindinput="requestTextInput" placeholder="Your request text"></input>
+</view>
+</view>
+

@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<!--bindtap="bindViewTap"-->
+<view class="avatar_container">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"/>
+</view>
+
+  <!-- <text>Login</text> -->
+  <i class="fas fa-user"></i>
+  <input required placeholder-class="phcolor" type="text" placeholder="Login" bindinput="userLoginInput" name="user_login"></input>
+  <!-- <text>Password</text> -->
+  <i class="fas fa-lock"></i>
+  <input required placeholder-class="phcolor" password type="text" placeholder="Password" bindinput="userPwdInput" name="user_pwd"></input>
+  <view class="button_cont">
+    <button bindtap="toMain">Sign In</button>
+  </view>
+  <view class="button_cont">
+    <button bindtap="toRegistration">Sign Up</button>
+  </view>
+  <a bindtap="forgetPwd">Forget password?</a>
+</view>

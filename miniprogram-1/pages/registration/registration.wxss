@@ -1,0 +1,44 @@
+/* pages/registration/registration.wxss */
+Page{
+  font-family: Apple Chancery;
+}
+.reg_txt{
+  display: inline-flex;
+  width: 20%;
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.rg_user_gender{
+  display: inline-flex;
+  margin-left: 5%;
+  width: 65%;
+  text-align: center;
+}
+.radio{
+  margin-left: 1rem;
+}
+.dob{
+  display: inline-flex;
+  margin-left: 5%;
+  width: 65%;
+}
+
+picker-view{
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+}
+
+input[type="text"]{
+  display: inline-flex;
+  margin-left: 5%;
+  width: 65%;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+button{
+  display: block;
+  margin-top: 5%;
+}

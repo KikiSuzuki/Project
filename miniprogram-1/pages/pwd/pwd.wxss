@@ -1,0 +1,13 @@
+/* pages/pwd/pwd.wxss */
+input[type="text"]{
+  background: rgb(255, 255, 255,0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 22px;
+  padding-left: 10px;
+  border: 2px solid #324b4e;
+  border-radius: 5px;
+  outline: none;
+  color:white;
+  position: inherit;
+}

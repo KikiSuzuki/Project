@@ -1,0 +1,90 @@
+/* pages/main/main.wxss */
+page{
+  color: white
+}
+#indicators{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#indicator_red{
+  display: inline-flex;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}
+#indicator_yellow{
+  display: inline-flex;
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}
+#indicator_green{
+  display: inline-flex;
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+}
+
+#indicator_red.activ{
+  box-shadow: 0 0 5px 3px #fff;
+}
+#indicator_red.nonactiv{
+  box-shadow: 0 0 0 0;
+}
+#indicator_yellow.activ{
+  box-shadow: 0 0 5px 3px #fff;
+}
+#indicator_yellow.nonactiv{
+  box-shadow: 0 0 0 0;
+}
+#indicator_green.activ{
+  box-shadow: 0 0 5px 3px #fff;
+}
+#indicator_green.nonactiv{
+  box-shadow: 0 0 0 0;
+}
+
+
+#sos_btn{
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  color: white;
+  background-color: #A3D0C3;
+  border: 2px solid #324b4e;
+  margin-left: 25%;
+  margin-top: 20%;
+  border-radius: 85px;
+}
+
+#rb{
+  margin-top: 5%;
+}
+#txt{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  border-radius: 10px;
+  background: rgb(255, 255, 255,0.7);
+  text-align: center;
+  width: 90%
+} 
+#rb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

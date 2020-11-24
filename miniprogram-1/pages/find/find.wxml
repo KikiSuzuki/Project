@@ -1,0 +1,29 @@
+<!--pages/find/find.wxml-->
+<view class="container">
+  <input placeholder-class="phcolor" placeholder="part of name or login"  type="text" bindinput="findFriendInput"/>
+</view>
+
+<view class="container">
+  <block wx:for="{{users}}" wx:for-item="user">
+  <view style="display:flex; flex-direction:row; align-items: center; justify-content: center; ">
+      <image class="avatar" src="{{user.photopath}}"/>
+      <view class="info">
+        <view>
+          <text style="font-weight: 800; font-size:18px;">{{user.user_name}}</text>
+        </view>
+        <view>
+          <text>{{user.user_gender}}</text>
+        </view>
+        <view>
+          <text>{{user.user_dob}}</text>
+        </view>
+      </view>
+      <view>
+      <input type="button" bindtap="addFriend" value="+" data-user_id="{{user.user_id}}"/> 
+      </view>
+    </view>
+    <view>
+      <text id="about">About: {{user.user_about}}</text>
+    </view>
+  </block>
+</view>

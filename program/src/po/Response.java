@@ -1,0 +1,31 @@
+package po;
+
+public class Response {
+    private int response_id;
+    private int user_id;
+    private int request_id;
+
+    public int getResponse_id() {
+        return response_id;
+    }
+
+    public void setResponse_id(int response_id) {
+        this.response_id = response_id;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public int getRequest_id() {
+        return request_id;
+    }
+
+    public void setRequest_id(int request_id) {
+        this.request_id = request_id;
+    }
+}

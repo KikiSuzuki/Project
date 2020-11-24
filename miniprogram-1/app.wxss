@@ -1,0 +1,23 @@
+/**app.wxss**/
+page{
+  font-family: Apple Chancery;
+  color: white;
+}
+.phcolor{
+  color:#7BA7AB;
+}
+.container{
+  margin-top: 1rem;
+  display: block;
+  position: static;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #7BA7AB;
+  border-radius: 20px;
+}
+.section{
+  display: block;
+  margin-top: -1%;
+  text-align: center;
+  font-size: 22px;
+}

@@ -1,0 +1,47 @@
+<!--pages/registration/registration.wxml-->
+<view class="container">
+<text class="reg_txt">Login</text>
+<input type="text" bindinput="userLoginInput" name="user_login"></input>
+
+<text class="reg_txt">Name</text>
+<input type="text" bindinput="userNameInput" name="user_name" value="{{user_name}}"></input>
+
+<text class="reg_txt">Gender</text>
+<radio-group class="rg_user_gender" bindchange="genderChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group> 
+
+<text class="reg_txt">Birthday</text>
+<view class="dob">
+  <picker-view indicator-style="height: 2rem;" value="{{value}}" bindchange="dobChange">
+    <picker-view-column>
+      <view wx:for="{{years}}" style="line-height: 2rem">{{item}} Y</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 2rem">{{item}} M</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 2rem">{{item}} D</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+<text class="reg_txt">Question</text>
+<input type="text" placeholder="" bindinput="userQuestionInput"></input>
+
+<text class="reg_txt">Answer</text>
+<input type="text" bindinput="userAnswerInput"></input>
+
+<text class="reg_txt">Password</text>
+<input password type="text" bindinput="userPassword1Input"></input>
+
+<text class="reg_txt">Password</text>
+<input password type="text" bindinput="userPassword2Input" ></input>
+
+<text class="reg_txt">About</text>
+<input type="text" maxlength="26" bindinput="userAboutInput"></input>
+<!--<button>Back</button>-->
+<button bindtap="saveNewUser">Save</button>
+</view>

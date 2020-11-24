@@ -1,0 +1,64 @@
+<!--pages/friends/friends.wxml-->
+<!--<text>pages/friends/friends.wxml</text>-->
+<view class="container">
+  <view class="section">New Friend Request:</view>
+</view>
+
+<view class="container">
+  <block wx:for="{{new_friends}}" wx:for-item="new_friend">
+  <view style="display:flex; flex-direction:row; align-items: center; justify-content: center; ">
+      <image class="avatar" src="{{new_friend.photopath}}"/>
+      <view class="info">
+        <view>
+          <text style="font-weight: 900; font-size:18px;">{{new_friend.user_name}}</text>
+        </view>
+        <view>
+          <text>{{new_friend.user_gender}}</text>
+        </view>
+        <view>
+          <text>{{new_friend.user_dob}}</text>
+        </view>
+      </view>
+      <view>
+      <input type="button" disabled bindtap="confirmFriend" value="  ✓  " data-user_id="{{new_friend.user_id}}"/> 
+      </view>
+      <view>
+      <input type="button" disabled bindtap="refuseFriend" value="  ✗  " data-user_id="{{new_friend.user_id}}"/> 
+      </view>
+    </view>
+    <view>
+      <text id="about">About: {{new_friend.user_about}}</text>
+    </view>
+  </block>
+</view>
+
+
+
+
+<view class="container">
+  <view class="section">My Friends:</view>
+</view>
+<view class="container">
+  <block wx:for="{{friends}}" wx:for-item="friend">
+  <view style="display:flex; flex-direction:row; align-items: center; justify-content: center; ">
+      <image class="avatar" src="{{friend.photopath}}"/>
+      <view class="info">
+        <view>
+          <text style="font-weight: 900; font-size:18px;">{{friend.user_name}}</text>
+        </view>
+        <view>
+          <text>{{friend.user_gender}}</text>
+        </view>
+        <view>
+          <text>{{friend.user_dob}}</text>
+        </view>
+      </view>
+      <view>
+      <input disabled type="button" bindtap="deleteFriend" value="✗" data-user_id="{{friend.user_id}}" /> 
+      </view>
+    </view>
+    <view>
+      <text id="about">About: {{friend.user_about}}</text>
+    </view>
+  </block>
+</view>
